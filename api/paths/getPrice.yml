@@ -1,0 +1,13 @@
+  /getPrice:
+    get:
+      summary: "GetPrice is a free data retrieval call binding the contract method"
+      operationId: "getPrice"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Successful query"
+          schema:
+            $ref: "#/definitions/ApiResponse"
+        428:
+          description: "Request Timeout"
